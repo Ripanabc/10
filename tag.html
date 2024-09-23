@@ -1,13 +1,62 @@
 <html>
   <head>
     <style>
+      @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+.text {
+  background: url(https://images.pexels.com/photos/1672322/pexels-photo-1672322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  color: transparent;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'Fredoka One', cursive;
+  
+  font-size: 40px;
+  animation: bgPosition 2s infinite;
+  
+}
+
+@keyframes bgPosition {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+
+html , body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #db9cff;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 50px;
+  box-shadow: 5px 5px 0 #222122;
+  background: green;
+}
       p{
         font-size:50;
       }
     </style>
   </head>
 <body>
-  <p>Auxiliary verb: am,is,are
+  <div class="text">
+    <div class="box">Auxiliary verb: </div></div>am,is,are
 ,was,were,have,has,had,may,might,can,could,shall,should,will,would,must,need,dare,ought to
 ,used to</p>
 <h1>Tag Question </h1>
