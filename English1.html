@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>English</title>
+	<style>
+	*{
+	box-sizing: border-box;
+	}
+	html {
+	font-size: 10px;
+	font-family: sans-serif;
+
+    background-image: linear-gradient(280deg,#faf5ff 60%, #faf5ff 60%, #Ff9efd 100%);
+	}
+	
+	main {
+	width: 90%;
+	margin: 5% 10%;
+	text-align: center;
+	}
+	a{
+	font-weight:100%;
+	color:light;
+	}
+	h1 {
+	color: teal;
+	font-size: 40px;
+	}
+	footer a, a::after, footer p {
+	font-size: 12px;
+	color: teal;
+	margin: 5% 0;
+	}
+	.keys {
+	display: flex;
+	flex: 1;
+	min-height: 50vh;
+	align-items: center;
+	justify-content: center;
+	}
+	
+	.key {
+	border: 4px solid teal;
+	border-radius: 55px;
+	margin: 1rem;
+	font-size: 1.9rem;
+	padding: 1rem 0.5rem;
+	transition: all 0.2s;
+	width: 330px;
+	text-align: center;
+	color: red;
+	background: rgba(200,220,00,.1);
+	/* background: rgba(0,0,0,0.4); */
+	text-shadow: 12 20 5px orrange;
+	}
+	
+	.playing {
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 0 0 1px #ffc600;
+	}
+	
+	kbd {
+	display: block;
+	font-size: 40px;
+	}
+	
+	.sound {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: red;
+	}
+	
+	@media (max-width: 700px) {
+	.keys {
+	display: grid;
+	grid-template-columns: 1fr  ;
+	grid-template-rows: 1fr ;
+	grid-gap: 10px;
+	justify-items: center;
+	}
+	
+	.key {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+	}
+	
+	</style>
+</head>
+
+<body>
+
+	<main>
+		<header>
+			<h1><div class="rainbow">English </div></h1>
+		</header>
+		<section class="keys">
+		
+			<section data-key="65" class="key">
+				<kbd><a href="https://ripanabc.github.io/10/tag.html">Tag Question</a><kbd>
+		
+			</section>
+			<section data-key="83" class="key">
+				<a href="https://ripanabc.github.io/10/suffix1.html"><kbd>Suffix-Prefix</kbd></a>
+			</section>
+			<section data-key="68" class="key">
+				<kbd><a href="https://ripanabc.github.io/result/card1.html">Multiple Choice</a></kbd>
+			</section>
+			<section data-key="70" class="key">
+				<kbd><a href="https://ripanabc.github.io/online/frebox4.html">Game </a></kbd>
+			</section>
+			<section data-key="71" class="key">
+				<kbd><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtFgnxp4Oox8dzOs05O6cTOJuYB5QsBaQtKc3Er83DwRfVUQ/viewform" >Verb1</a></kbd>
+			</section>
+			<section data-key="72" class="key">
+				<kbd><a href="https://ripanabc.github.io/prep/preposition.html" >Preposition</a></kbd>
+			</section>
+			<section data-key="74" class="key">
+				<kbd><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaIXFl4aVP5UyrDUHoru2ZPq0Izs2qNxCWdrC42Y38sruhvQ/viewform" >Verb3</a></kbd>
+			</section>
+			<section data-key="75" class="key">
+				<kbd><a href="https://ripanabc.github.io/online/Verb-3.html" >Conjugation of verbs</a></kbd>
+			</section>
+			<section data-key="76" class="key">
+				<kbd><a href="https://ripanabc.github.io/prep/verb1.html" >The rules of verb</a></kbd>
+			</section>
+			<section data-key="77" class="key">
+			<kbd><a href="" >Narration</a></kbd>
+			</section>
+			<section data-key="78" class="key">
+			<kbd>Punctuation</kbd>
+			</section>
+			<section data-key="79" class="key">
+			<kbd><a href="" >With and Without clue</a></kbd>
+			</section>
+			<section data-key="80" class="key">
+			<kbd>Transformation</kbd>
+			</section><section data-key="81" class="key">
+			<kbd><a href="" >Article</a></kbd>
+			</section>
+			<section data-key="82" class="key">
+			<kbd>Written </kbd>
+			</section>
+	
+		</section>
+
+		<audio data-key="65" src="ok.mp3"></audio>
+		<audio data-key="83" src="ok.mp3"></audio>
+		<audio data-key="68" src="ok.mp3"></audio>
+		<audio data-key="70" src="ok.mp3"></audio>
+		<audio data-key="71" src="ok.mp3"></audio>
+		<audio data-key="72" src="ok.mp3"></audio>
+		<audio data-key="74" src="ok.mp3"></audio>
+		<audio data-key="75" src="ok.mp3"></audio>
+		<audio data-key="76" src="ok.mp3"></audio>
+		<audio data-key="77" src="ok.mp3"></audio>
+		<audio data-key="78" src="ok.mp3"></audio>
+		<audio data-key="79" src="ok.mp3"></audio>
+		<audio data-key="80" src="ok.mp3"></audio>
+		<audio data-key="81" src="ok.mp3"></audio>
+		<audio data-key="82" src="ok.mp3"></audio>
+		
+
+		<footer>
+			<p>Welcome to Ripan Academy</p>
+		</footer>
+
+	</main>
+	<script src="new grid.js"></script>
+</body>
+
+</html>
