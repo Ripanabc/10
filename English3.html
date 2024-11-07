@@ -75,16 +75,29 @@
 	letter-spacing: 1px;
 	color: red;
 	}
-	
+	.sound {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
+	}
 	@media (max-width: 700px) {
 	.keys {
 	display: grid;
-	grid-template-columns: 1fr ;
-	grid-template-rows: 1fr ;
+	grid-template-columns: 1fr  ;
+	grid-template-rows: ;
 	grid-gap: 10px;
 	justify-items: center;
 	}
-	
+	}
+	@media (min-width: 700px) {
+	.keys {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-items: center;
+	}
 	.key {
 	display: flex;
 	align-items: center;
