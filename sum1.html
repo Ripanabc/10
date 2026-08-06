@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wasm Summation</title>
+</head>
+<body>
+    <h2>Summation using WebAssembly</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button id="calcBtn">Calculate Sum</button>
+    <p>Result: <span id="result"></span></p>
+
+    <script src="sum.js"></script>
+    <script>
+        // Wait until the Emscripten Module is fully initialized
+        Module.onRuntimeInitialized = function() {
+            document.getElementById('calcBtn').addEventListener('click', () => {
+                const val1 = parseInt(document.getElementById('num1').value) || 0;
+                const val2 = parseInt(document.getElementById('num2').value) || 0;
+                
+                // Call the exported C function using ccall
+                const ans = Module.ccall('sum', 'number', ['number', 'number'], [val1, val2]);
+                
+                document.getElementById('result').innerText = ans;
+            });
+        };
+    </script>
+</body>
+</html>
